@@ -3,6 +3,7 @@ name: textlint
 on:
   pull_request:
     types: [opend, synchronize, reopened]
+    paths: ['docs/articles/**/*.md']
 
 jobs:
   textlint:
@@ -27,7 +28,7 @@ jobs:
       - name: Install packages
         run: npm install
       - name: Run textlint
-        run: npx textlint "textlint-test.io/docs/articles/**/*.md" -o ./.textlint.log | true
+        run: npx textlint "docs/articles/**/*.md" -o ./.textlint.log | true
         shell: bash {0}
       - name: Report problems
         run: |
