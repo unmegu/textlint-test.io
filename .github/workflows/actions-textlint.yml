@@ -3,7 +3,6 @@ name: textlint
 on:
   pull_request:
     types: [opend, synchronize, reopened]
-    paths: [ 'textlint-test.io/docs/articles/**/*.md' ]
 
 jobs:
   textlint:
