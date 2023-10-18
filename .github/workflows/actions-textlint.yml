@@ -36,6 +36,8 @@ jobs:
         run: npx textlint "docs/articles/**/*.md" -o ./.textlint.log | true
         shell: bash {0}
       - name: Report problems
+        env:
+          GH_TOKEN : ${{ steps.generate_token.outputs.token }}
         run: |
           if [ -e ./.textlint.log ]; then
             # create body file
@@ -44,5 +46,3 @@ jobs:
             # pr comment
             gh pr comment --body-file ./.body.txt "${URL}"
           fi
-        env:
-           GH_TOKEN : ${{ steps.generate_token.outputs.token }}
