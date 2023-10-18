@@ -36,8 +36,6 @@ jobs:
         run: npx textlint "docs/articles/**/*.md" -o ./.textlint.log | true
         shell: bash {0}
       - name: Report problems
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
         env:
           GH_TOKEN : ${{ steps.generate_token.outputs.token }}
         run: |
