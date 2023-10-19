@@ -18,9 +18,13 @@
 1. `.github/workflows`フォルダを作成し，その直下にGitHub Actionsを設定するYAMLファイルを作成する
 2. YAMLファイル中のsecretと同名のsecretを作成し，事前に作成したGitHub AppのIDとpemをそれぞれ登録する
 3. `.textrc`ファイルを作成し，ファイルの中身を適宜書き換えてルールを調整する
-    ルールは基本的にtrueになっているので，必要に応じて明治的にfalseを書き足すことで調整できる．
+    ルールは基本的にtrueになっているので，必要に応じて明示的にfalseを書き足すことで調整できる．
 
     デフォルトのルールのセットは[技術文書向けルールプリセット](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing)を利用している．
+### ルール
+- 表記揺れに関するルールは`rule/prh.yml`にインポートしているファイルで定義している
+- GEMBA開発系の新しく定義したい単語は，`prh_corporation.yml`で定義する予定である
+- そのほかのルールは[技術文書向けルールプリセット](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing)に準ずる
 
 ## 参考
 [1] https://dev.classmethod.jp/articles/markdown-writing-with-textlint-ci/
