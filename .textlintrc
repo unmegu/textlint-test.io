@@ -10,7 +10,7 @@
        "ja-no-weak-phrase": false
     },
     "prh": {
-      "rulePtahs": [
+      "rulePaths": [
         "./.github/rule/prh.yml"
       ]
     }
