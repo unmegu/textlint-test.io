@@ -22,7 +22,7 @@
 
     デフォルトのルールのセットは[技術文書向けルールプリセット](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing)を利用している．
 
-参考
+## 参考
 [1] https://dev.classmethod.jp/articles/markdown-writing-with-textlint-ci/
 
 [2] https://blog.beachside.dev/entry/2023/07/18/183000
