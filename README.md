@@ -24,9 +24,11 @@
 
 参考
 [1] https://dev.classmethod.jp/articles/markdown-writing-with-textlint-ci/
+
 [2] https://blog.beachside.dev/entry/2023/07/18/183000
+
 [3] https://zenn.dev/yuma_prog/articles/actions_trigger-by-githubtoken
+
 [4] https://docs.github.com/ja/enterprise-cloud@latest/apps/creating-github-apps/authenticating-with-a-github-app/making-authenticated-api-requests-with-a-github-app-in-a-github-actions-workflow
+
 [5] https://qiita.com/developer-kikikaikai/items/60b209c065f076dca7a1
-
-
