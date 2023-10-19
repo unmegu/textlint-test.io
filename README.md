@@ -16,7 +16,7 @@
 
 ### 方法
 1. `.github/workflows`フォルダを作成し，その直下にGitHub Actionsを設定するYAMLファイルを作成する
-2. YAMLファイル中のsecretと同名のsecretを作成し，事前に作成したGitHub AppのIDとpemをそれぞれ登録する
+2. YAMLファイル中のsecretと同名のsecretを作成し，事前に作成したGitHub AppのIDとプライベートキーをそれぞれ登録する
 3. `.textlintrc`ファイルを作成し，ファイルの中身を適宜書き換えてルールを調整する
     ルールは基本的にtrueになっているので，必要に応じて明示的にfalseを書き足すことで調整できる．
 
