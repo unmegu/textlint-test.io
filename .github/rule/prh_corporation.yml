@@ -1,0 +1,10 @@
+meta:
+  - title: 固有名詞のルール
+  - memo: 手動更新で管理してます
+rules:
+  - expected: MetaMoJi
+    specs:
+      - from: metamoji
+        to:   MetaMoJi
+      - from: MetaMoji
+        to:   MetaMoJi
