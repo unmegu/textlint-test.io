@@ -5,13 +5,18 @@
 ## 実装方法
 　Textlintというツールを使って，実装する．
 [Textlintのチェックのルールは，GitHub - textlint-ja/textlint-rule-preset-ja-technical-writing: 技術文書向けのtextlintルールプリセット ](https://dev.classmethod.jp/articles/markdown-writing-with-textlint-ci/)
-を使用して適宜微調整をする． 今回のチェックの設定は後半に記述する．
-前提
-リポジトリがすでに存在している
-注意
-今回はbotから送信されるべきコメントが，海野の個人アカウントから送信される．
-理由：GITHUB_TOKENというSecretがデフォルトであるものなのに，自分のtokenが登録してあるSecretを使ってしまっているため．
-方法
+を使用して適宜微調整をする． 
+
+今回のチェックの設定は後半に記述する．
+
+
+### 前提
+- リポジトリがすでに存在している
+- プルリクへコメントをするためのGitHub Appsを作成済みである（権限でできない場合あり）
+    - まだ作成していなかった場合は，[こちらのサイト](https://docs.github.com/ja/enterprise-cloud@latest/apps/creating-github-apps/authenticating-with-a-github-app/making-authenticated-api-requests-with-a-github-app-in-a-github-actions-workflow)を参考に作成
+
+### 方法
+
 参考
 [1] https://dev.classmethod.jp/articles/markdown-writing-with-textlint-ci/
 [2] https://blog.beachside.dev/entry/2023/07/18/183000
