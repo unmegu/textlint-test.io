@@ -1,0 +1,24 @@
+# ========================================
+# 「ics.media」や「テキスト校正くん」の日本語校正辞書
+#
+# 作成者 : 池田 泰延
+# ========================================
+version: 1
+
+# 校正辞書はモジュールとして分離してます
+imports:
+  # ひらく漢字
+  - ./prh_open_close.yml
+
+  # 冗長な表現
+  - ./prh_redundancy.yml
+
+
+  # 外来語カタカナ表記
+  - ./prh_cho_on.yml
+
+  # 固有名詞
+  - ./prh_corporation.yml
+
+# ルールは以下を参照。
+# https://github.com/vvakame/prh/tree/master/misc

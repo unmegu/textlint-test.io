@@ -8,6 +8,11 @@
        "no-exclamation-question-mark": false,
        "no-hankaku-kana": false,
        "ja-no-weak-phrase": false
+    },
+    "prh": {
+      "rulePtahs": [
+        "./.github/rule/prh.yml"
+      ]
     }
   },
   "filters": {
